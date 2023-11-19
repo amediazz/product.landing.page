@@ -1,6 +1,6 @@
-#product landing page
+# product landing page
 
-##In this project I learned how :
+## In this project I learned how :
 <ul>
 <li>To built a product landing page </li>
 <li>Choose the right color and the information to show to the custumer.</li>
