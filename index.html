@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=max-width, initial-scale=1.0">
-  <meta rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
   <title>Product landing page</title>
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> -->
-
-<!-- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> -->
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 </head>
 <body>
   <header id="header">
-    <img alt="logo" id="header-img" src=""/>
-    <i class="las la-guitar"></i>
+    <img alt="logo" id="header-img" src="original-guitar-logo.svg"/>
     <nav id="nav-bar">
       <ul>
         <li><a class="nav-link"href="#features">Features</a></li>
-        <li><a class="nav-link"href="#video"> How it works</a></li>
+        <li><a class="nav-link"href="#submit"> How it works</a></li>
         <li><a class="nav-link" href="#pricing">pricing</a></li>
       </ul>
     </nav>
   </header>
   <section id="features">
-  <h1> Luthiers on the Origins of Their Craft</h1>
+  <h1>Would you like to build your very own guitar ?</h1>
+  <h1>Thats great!</h1>
+  <h1>We can't wait to get you started!</h1>
   <form id="form" action="https://www.freecodecamp.com/email-submit">
     <input id="email" type="email" placeholder="Your email adress" name="email">
-    <input id="submit" type="submit" / value="reserve your guitar">
-
+    <input class="register" id="submit" type="submit" value="Register">
   </form>
   </section>
   
-  <iframe id="video" width="750" height="422" src="https://www.youtube.com/embed/PC6Acydf0jc" title="Raw Craft with Anthony Bourdain - Episode Nine: Rachel Rosenkrantz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
- 
+  <section id="how-it-works">
+    <div class="steps">
+      <div class="step-one">
+        <div class="icon">
+          <i class="la la-3x la-registered"></i>
+        </div>
+        <div class="desc">
+          <h2>SUBMIT YOUR APPLICATION</h2>
+          <p>Submit your application,and reserve your guitar</p>
+        </div>
+      </div>
+      <div class="step-two">
+        <div class="icon">
+          <i class="la la-3x la-cash-register"></i>
+        </div>
+        <div class="desc">
+          <h2>MATERIAL DEPOSIT</h2>
+          <p>After you've submitted your application, please submit the material deposit that corresponds with the instrument you'd like to build! Again, remember that applications submitted without a material deposit will not reserve the applicant a spot, so don't forget!</p>
+        </div>
+      </div>
+      <div class="step-three">
+        <div class="icon">
+          <i class="la la-3x la-guitar"></i>
+        </div>
+        <div class="desc">
+          <h2>LET GET STARTED </h2>
+          <p>After your application,and the material deposit that corresponds with the instrument you'd like to build! you can start class and built your own instrument</p>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <iframe id="video" width="750" height="422" src="https://www.youtube.com/embed/PC6Acydf0jc" title="Raw Craft with Anthony Bourdain - Episode Nine: Rachel Rosenkrantz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
   <section id="pricing">
-    <div class="accoustic">
+    <div class="product" id="accoustic">
       <h2>Acoustic guitar</h2>
       <h3>$600</h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <button id="acoustic-g">Select</button>
+        <p>Material fee does not include extremely exotic woods or pickups</p>
+      <button class="btn-p" id="acoustic-g">Select</button>
     </div>
-    <div class="electric"> 
+    <div class="product" id="electric"> 
     <h2>Electric guitar</h2>
       <h3>$600</h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <button id="acoustic-g">Select</button>
+        <p>Material fee does not include extremely exotic woods or pickups</p>
+      <button class="btn-p" id="acoustic-g">Select</button>
     </div>
-    <div>
+    <div class="product" id="ukulele">
       <h2>ukulele guitar</h2>
       <h3>$350</h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <button id="acoustic-g">Select</button>
+      <p>Material fee does not include extremely exotic woods or pickups</p> 
+      <button class="btn-p" id="acoustic-g">Select</button>
     </div>
+  </section>
+  <section class="footer">
+    <p>Copyright &copy; 2023. All rights reserved.</p>
   </section>
 </body>
